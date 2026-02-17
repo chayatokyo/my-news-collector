@@ -1,0 +1,244 @@
+# AI News Collection
+# 生成AI関連ニュースの日次RSS収集設定
+
+# コレクション名（出力フォルダ名に使用）
+name: ai-news
+
+# 出力設定
+output:
+  directory: output/ai-news
+  filename_format: "{date}.md" # YYYY-MM-DD.md
+  title_format: "AI News — {date_jp}" # 日本語タイトル
+
+# 記事の取得範囲（時間単位）
+# GitHub Actions は1日1回実行のため、48時間に設定して取りこぼし防止
+fetch_hours: 48
+
+# キーワードフィルタ（いずれかに合致する記事を収集）
+# 大文字小文字は区別しない
+keywords:
+  - AI
+  - 人工知能
+  - LLM
+  - GPT
+  - ChatGPT
+  - Claude
+  - Gemini
+  - Copilot
+  - Antigravity
+  - 生成AI
+  - Generative AI
+  - Machine Learning
+  - 機械学習
+  - Deep Learning
+  - 深層学習
+  - Large Language Model
+  - 大規模言語モデル
+  - AI Agent
+  - AIエージェント
+  - Diffusion
+  - Stable Diffusion
+  - Midjourney
+  - DALL-E
+  - OpenAI
+  - Anthropic
+  - DeepMind
+  - LLaMA
+  - Llama
+  - RAG
+  - Fine-tuning
+  - ファインチューニング
+  - Prompt
+  - プロンプト
+  - Transformer
+  - Neural Network
+  - ニューラルネットワーク
+  - NLP
+  - 自然言語処理
+  - Computer Vision
+  - 画像認識
+  - 音声認識
+  - Text to Speech
+  - Speech to Text
+  - AEO
+  - GEO
+  - AI Overview
+  - Cursor
+  - Devin
+  - Replit
+
+# 除外キーワード（これらが含まれる記事は除外）
+exclude_keywords: []
+
+# RSSフィード一覧
+feeds:
+  # ── AI企業公式ブログ（一次情報・最重要） ──
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+    category: official
+    language: en
+
+  - name: Anthropic News
+    url: https://www.anthropic.com/rss/news.xml
+    category: official
+    language: en
+
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/rss/
+    category: official
+    language: en
+
+  - name: Google Developers Blog
+    url: https://developers.googleblog.com/feeds/posts/default?alt=rss
+    category: official
+    language: en
+
+  - name: Meta AI Blog
+    url: https://ai.meta.com/blog/rss/
+    category: official
+    language: en
+
+  - name: Microsoft AI Blog
+    url: https://blogs.microsoft.com/ai/feed/
+    category: official
+    language: en
+
+  # ── 国内ニュースメディア ──
+  - name: ITmedia AI+
+    url: https://rss.itmedia.co.jp/rss/2.0/aiplus.xml
+    category: domestic
+    language: ja
+
+  - name: ASCII.jp AI
+    url: https://ascii.jp/ai/rss.xml
+    category: domestic
+    language: ja
+
+  - name: Ledge.ai
+    url: https://ledge.ai/feed
+    category: domestic
+    language: ja
+
+  - name: AINOW
+    url: https://ainow.ai/feed/
+    category: domestic
+    language: ja
+
+  # ── 海外ニュースメディア ──
+  - name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    category: international
+    language: en
+
+  - name: The Verge AI
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    category: international
+    language: en
+
+  - name: Ars Technica AI
+    url: https://feeds.arstechnica.com/arstechnica/ai
+    category: international
+    language: en
+
+  - name: VentureBeat AI
+    url: https://venturebeat.com/category/ai/feed/
+    category: international
+    language: en
+
+  # ── 技術メディア・コミュニティ ──
+  - name: Zenn AI
+    url: https://zenn.dev/topics/ai/feed
+    category: tech
+    language: ja
+
+  - name: Zenn LLM
+    url: https://zenn.dev/topics/llm/feed
+    category: tech
+    language: ja
+
+  - name: Qiita AI
+    url: https://qiita.com/tags/ai/feed
+    category: tech
+    language: ja
+
+  - name: Qiita LLM
+    url: https://qiita.com/tags/llm/feed
+    category: tech
+    language: ja
+
+  - name: Hacker News (front)
+    url: https://hnrss.org/frontpage
+    category: tech
+    language: en
+
+  # ── Reddit ──
+  - name: r/MachineLearning
+    url: https://www.reddit.com/r/MachineLearning/.rss
+    category: reddit
+    language: en
+
+  - name: r/LocalLLaMA
+    url: https://www.reddit.com/r/LocalLLaMA/.rss
+    category: reddit
+    language: en
+
+  - name: r/artificial
+    url: https://www.reddit.com/r/artificial/.rss
+    category: reddit
+    language: en
+
+  - name: r/ChatGPT
+    url: https://www.reddit.com/r/ChatGPT/.rss
+    category: reddit
+    language: en
+
+  - name: r/ClaudeAI
+    url: https://www.reddit.com/r/ClaudeAI/.rss
+    category: reddit
+    language: en
+
+  - name: r/GoogleGeminiAI
+    url: https://www.reddit.com/r/GoogleGeminiAI/.rss
+    category: reddit
+    language: en
+
+  - name: r/OpenAI
+    url: https://www.reddit.com/r/OpenAI/.rss
+    category: reddit
+    language: en
+
+  - name: r/CodingWithAI
+    url: https://www.reddit.com/r/CodingWithAI/.rss
+    category: reddit
+    language: en
+
+  - name: r/cursor
+    url: https://www.reddit.com/r/cursor/.rss
+    category: reddit
+    language: en
+
+  - name: r/GithubCopilot
+    url: https://www.reddit.com/r/GithubCopilot/.rss
+    category: reddit
+    language: en
+
+  - name: r/StableDiffusion
+    url: https://www.reddit.com/r/StableDiffusion/.rss
+    category: reddit
+    language: en
+
+  - name: r/singularity
+    url: https://www.reddit.com/r/singularity/.rss
+    category: reddit
+    language: en
+
+  # ── 業界特化 ──
+  - name: Web担当者Forum
+    url: https://webtan.impress.co.jp/feed
+    category: industry
+    language: ja
+
+  - name: MarkeZine
+    url: https://markezine.jp/rss/
+    category: industry
+    language: ja
