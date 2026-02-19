@@ -182,56 +182,6 @@ feeds:
     category: reddit
     language: en
 
-  - name: r/artificial
-    url: https://www.reddit.com/r/artificial/.rss
-    category: reddit
-    language: en
-
-  - name: r/ChatGPT
-    url: https://www.reddit.com/r/ChatGPT/.rss
-    category: reddit
-    language: en
-
-  - name: r/ClaudeAI
-    url: https://www.reddit.com/r/ClaudeAI/.rss
-    category: reddit
-    language: en
-
-  - name: r/GoogleGeminiAI
-    url: https://www.reddit.com/r/GoogleGeminiAI/.rss
-    category: reddit
-    language: en
-
-  - name: r/OpenAI
-    url: https://www.reddit.com/r/OpenAI/.rss
-    category: reddit
-    language: en
-
-  - name: r/CodingWithAI
-    url: https://www.reddit.com/r/CodingWithAI/.rss
-    category: reddit
-    language: en
-
-  - name: r/cursor
-    url: https://www.reddit.com/r/cursor/.rss
-    category: reddit
-    language: en
-
-  - name: r/GithubCopilot
-    url: https://www.reddit.com/r/GithubCopilot/.rss
-    category: reddit
-    language: en
-
-  - name: r/StableDiffusion
-    url: https://www.reddit.com/r/StableDiffusion/.rss
-    category: reddit
-    language: en
-
-  - name: r/singularity
-    url: https://www.reddit.com/r/singularity/.rss
-    category: reddit
-    language: en
-
   # ── 業界特化 ──
   - name: Web担当者Forum
     url: https://webtan.impress.co.jp/feed
