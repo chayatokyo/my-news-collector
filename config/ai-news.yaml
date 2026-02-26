@@ -112,8 +112,10 @@ feeds:
     category: domestic
     language: ja
 
-  # 日経クロステック: 公式RSS未提供のため除外
-  # Impress系（PC Watch, Web担当者Forum）でカバー
+  - name: 日経クロステック IT
+    url: https://xtech.nikkei.com/rss/xtech-it.rdf
+    category: domestic
+    language: ja
 
   - name: AINOW
     url: https://ainow.ai/feed/
